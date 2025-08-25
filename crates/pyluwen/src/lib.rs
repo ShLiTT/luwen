@@ -285,6 +285,8 @@ pub struct Telemetry {
     asic_id_high: u32,
     #[pyo3(get)]
     asic_id_low: u32,
+    #[pyo3(get)]
+    wdog_triggered: u32,
 }
 impl From<luwen_if::chip::Telemetry> for Telemetry {
     fn from(value: luwen_if::chip::Telemetry) -> Self {
@@ -369,6 +371,7 @@ impl From<luwen_if::chip::Telemetry> for Telemetry {
             therm_trip_count: value.therm_trip_count,
             asic_id_high: value.asic_id_high,
             asic_id_low: value.asic_id_low,
+            wdog_triggered: value.wdog_triggered,
         }
     }
 }

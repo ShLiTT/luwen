@@ -153,6 +153,7 @@ pub struct Telemetry {
     pub therm_trip_count: u32,
     pub asic_id_high: u32,
     pub asic_id_low: u32,
+    pub wdog_triggered: u32,
 }
 
 impl Telemetry {

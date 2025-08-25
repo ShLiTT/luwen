@@ -791,6 +791,7 @@ impl ChipImpl for Blackhole {
                     TelemetryTags::ThermTripCount => telemetry_data.therm_trip_count = data,
                     TelemetryTags::AsicIdHigh => telemetry_data.asic_id_high = data,
                     TelemetryTags::AsicIdLow => telemetry_data.asic_id_low = data,
+                    TelemetryTags::WDogTriggered => telemetry_data.wdog_triggered = data,
                     _ => (),
                 }
             }

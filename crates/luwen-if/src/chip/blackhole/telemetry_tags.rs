@@ -59,4 +59,5 @@ pub enum TelemetryTags {
     ThermTripCount = 60,
     AsicIdHigh = 61,
     AsicIdLow = 62,
+    WDogTriggered = 63,
 }
